@@ -81,4 +81,10 @@ hr {
 	  margin: 0;
 	}
   }
+
+  div.data-block
+  {
+	display: grid;
+	grid-template-columns: 25% 75%;
+  }
 }
