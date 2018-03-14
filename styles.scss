@@ -38,3 +38,47 @@ hr {
   border-right: 1px solid #bebebe;
   height: 25px;
 }
+
+@supports (display: grid)
+{
+  div.triple-data
+  {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1rem;
+
+	div.data-top
+	{
+	  grid-row: 1/1;
+	  grid-column: 1/2;
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  margin: 0;
+
+	  div.data-tl
+	  {
+		grid-column: 1/1;
+	  }
+
+	  div.data-tr
+	  {
+		grid-column: 2/2;
+	  }
+	}
+
+	div.data-bl
+	{
+	  grid-row: 2/2;
+	  grid-column: 1/1;
+	  margin: 0;
+	}
+
+	div.data-br
+	{
+	  grid-row: 2/2;
+	  grid-column: 2/2;
+	  margin: 0;
+	}
+  }
+}
