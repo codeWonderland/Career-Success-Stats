@@ -5,6 +5,18 @@ hr {
   margin-bottom: 0;
 }
 
+div.percent p
+{
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+dt
+{
+  padding: 1rem !important;
+}
+
 .bar {
   width: calc(100%);
   border: 3px solid #005695;
@@ -39,19 +51,32 @@ hr {
   height: 25px;
 }
 
+.faq-answer.accordion-content
+{
+  padding: 2rem;
+}
+
+table.tablesaw.tablesaw-stack
+{
+  box-shadow: 0 0 100px 100px transparent !important;
+  -moz-box-shadow: 0 0 100px 100px transparent !important;
+  -webkit-box-shadow: 0 0 100px 100px transparent !important;
+  border: 0 !important;
+}
+
 @supports (display: grid)
 {
   div.triple-data
   {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 0.75fr 1fr;
 	grid-gap: 1rem;
 
 	div.data-top
 	{
 	  grid-row: 1/1;
-	  grid-column: 1/2;
+	  grid-column: 1/ span 2;
 	  display: grid;
 	  grid-template-columns: 1fr 1fr;
 	  margin: 0;
