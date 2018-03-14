@@ -9,6 +9,14 @@ div.percent p {
   font-weight: 700;
   text-align: center; }
 
+div.remodal {
+  width: 85%;
+  max-width: 850px; }
+
+div.data-tl p:first-child {
+  padding-top: 0 !important;
+  text-align: center; }
+
 dt {
   padding: 1rem !important; }
 
@@ -44,6 +52,9 @@ dt {
 .faq-answer.accordion-content {
   padding: 2rem; }
 
+p#rel, p#exp {
+  margin-top: 0 !important; }
+
 table.tablesaw.tablesaw-stack {
   box-shadow: 0 0 100px 100px transparent !important;
   -moz-box-shadow: 0 0 100px 100px transparent !important;
@@ -54,7 +65,7 @@ table.tablesaw.tablesaw-stack {
   div.triple-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.75fr 1fr;
+    grid-template-rows: auto auto;
     grid-gap: 1rem; }
     div.triple-data div.data-top {
       grid-row: 1/1;
