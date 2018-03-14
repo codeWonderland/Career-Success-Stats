@@ -1,0 +1,428 @@
+<p>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+</p>
+<style><!--
+.bar {
+    width: calc(100%);
+    border: 3px solid #005695;
+    overflow: auto;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+}
+
+.bar .fill {
+    height: 100%;
+    background-color: #005695;
+    background-image: url(https://i.imgur.com/7giqQ1N.png);
+    background-repeat: repeat;
+}
+
+.statTable {
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+
+.statTable td {
+    vertical-align: middle;
+}
+
+.subBar {
+    display: block;
+    margin-top: 10px;
+}
+
+.subBar .fill {
+    height: 25px;
+    border: 1px solid #bebebe;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 0px;
+}
+
+.line {
+    border-right: 1px solid #bebebe;
+    height: 25px;
+}
+
+.accordion {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.accordionHeader {
+    padding: 10px;
+    background-color: #005693;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+
+.accordionContent {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(0,0,0,0.015);
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+}
+
+.accordionContent p {
+    padding: 5px;
+}
+
+.accordionContent ul {
+    margin: 5px;
+}
+
+.arrow {
+    float: right;
+    margin-right: 5px;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+.tablesaw-stack tbody tr {
+    border-bottom: none;
+}
+
+.tablesaw-stack tbody tr.bottomBorder {
+    border-bottom: 1px solid #cecece;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+.remodal {
+    background-color: #fff;
+    padding: 20px;
+    color: #57585a;
+    max-width: 865px !important;
+}
+
+.remodal h1 {
+    color: #57585a;
+    margin: 0;
+    padding: 0;
+}
+
+.remodal-confirm:hover {
+    background-color: #BD5527;
+}
+
+@media screen and (max-width: 450px) {
+    .statTable td, .accordionContent td, .remodal td {
+        width: 100% !important;
+        border: none !important;
+    }
+
+    .percent {
+        text-align: center !important;
+    }
+
+    .accordionHeader h3 {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .tablesaw-stack tbody tr.bottomBorder {
+        border-bottom: none !important;
+    }
+
+    #id, #rel, #exp {
+        margin-top: 0px;
+    }
+}
+
+
+
+.remodal h1 {
+    margin-left: 20px;
+}
+
+.remodal-close, .remodal-close:hover {
+    color: #57585a;
+}
+--></style>
+<table class="statTable tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+    <tbody>
+    <tr>
+        <td class="percent" style="text-align: center;"><span style="font-size: 5em; font-weight: bold;">95%</span></td>
+        <td style="width: 75%;">
+            <p style="font-size: 1.2em; margin-left: 20px;"><strong>Achieved Career Success</strong></p>
+            <p style="font-size: 1.2em; margin-left: 20px;">Champlain College Class of 2016 students <strong>employed</strong> or <strong>continuing education</strong> six months post-graduation.</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="bar">
+    <div class="fill" style="width: 95%;"></div>
+</div>
+<div class="subBar">
+    <div class="fill" style="width: 87%;"></div>
+    <div class="line" style="width: calc(44% - 1px);"></div>
+    <table class="statTable tablesaw tablesaw-stack" style="margin-left: auto; margin-right: auto;" data-tablesaw-mode="stack">
+        <tbody>
+        <tr>
+            <td class="percent"><span style="font-size: 4em; font-weight: bold;">87%</span></td>
+            <td style="width: 80%;">
+                <p style="font-size: 1.2em; margin-left: 20px;"><strong>Students Employed in Career-Relevant Jobs</strong></p>
+                <p style="font-size: 1.2em; margin-left: 20px;">Employed students in positions related to their career goals.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="percent"><span style="font-size: 4em; font-weight: bold;">89%</span></td>
+            <td style="width: 80%;">
+                <p style="font-size: 1.2em; margin-left: 20px;"><strong>Students Completed Experiential Learning</strong></p>
+                <p style="font-size: 1.2em; margin-left: 20px;">Graduates that completed one or more career relevant experiential learning opportunities</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<h2>Division Outcomes</h2>
+<!-- #ITS_OUTCOMES -->
+<div class="accordion default">
+    <div class="accordionHeader" style="background-color: #4c374b;">
+        <h3>Division of Information Technology &amp; Sciences Outcomes</h3>
+    </div>
+    <div class="accordionContent">
+        <table align="left" class="tablesaw tablesaw-stack" style="width: 100%;">
+            <tbody>
+            <tr class="bottomBorder">
+                <td style="width: 50%; text-align: center;"><span style="font-size: 5em; font-weight: bold;">98%</span></td>
+                <td style="width: 50%; vertical-align: middle;">
+                    <p style="font-size: 1.2em;"><strong>Achieved Career Success</strong></p>
+                    <p style="font-size: 1.2em;">ITS students employed or continuing education six months post-graduation.</p>
+                </td>
+            </tr>
+            <tr class="bottomBorder">
+                <td style="width: 50%; border-right: 1px solid #cecece;">
+                    <p style="font-size: 3em; font-weight: bold;">93%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Employed in Career-Relevant Jobs</strong></p>
+                    <p style="font-size: 1.2em;">Employed ITS students in positions related to their career goals.</p>
+                </td>
+                <td style="width: 50%;">
+                    <p style="font-size: 3em; font-weight: bold;">79%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Had At Least One Internship</strong></p>
+                    <p style="font-size: 1.2em;">ITS students with at least one internship or other professional work experience.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="tablesaw tablesaw-stack" style="margin-left: auto; margin-right: auto;">
+            <tbody>
+            <tr>
+                <td style="padding-bottom: 0;">
+                    <h4>Major-Specific Outcomes</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Computer &amp; Digital Forensics', 100, 83, 85);">Computer &amp; Digital Forensics</a></li>
+                        <li><a href="#" onclick="genModal('Computer Information Technology', 100, 86, 75);">Computer Information Technology</a></li>
+                        <li><a href="#" onclick="genModal('Computer Networking &amp; Cybersecurity', 100, 100, 87);">Computer Networking &amp; Cybersecurity</a></li>
+                    </ul>
+                </td>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Computer Science &amp; Innovation', 91, 90, 75);">Computer Science &amp; Innovation</a></li>
+                        <li><a href="#" onclick="genModal('Game Programming', 95, 100, 60);">Game Programming</a></li>
+                        <li><a href="#" onclick="genModal('Radiography', 100, 92, 100);">Radiography</a></li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="color: #aeaeae;">All statistics based on data gathered from 86% of graduates from the Division of Information Technology &amp; Sciences Class of 2016 six months post-graduation.</p>
+    </div>
+</div>
+<!-- #CCM_OUTCOMES -->
+<div class="accordion default">
+    <div class="accordionHeader" style="background-color: #d25459;">
+        <h3>Division of Communication &amp; Creative Media Career Outcomes</h3>
+    </div>
+    <div class="accordionContent">
+        <table align="left" class="tablesaw tablesaw-stack" style="width: 100%;">
+            <tbody>
+            <tr class="bottomBorder">
+                <td style="width: 50%; text-align: center;"><span style="font-size: 5em; font-weight: bold;">92%</span></td>
+                <td style="width: 50%; vertical-align: middle;">
+                    <p style="font-size: 1.2em;"><strong>Achieved Career Success</strong></p>
+                    <p style="font-size: 1.2em;">CCM students employed or continuing education six months post-graduation.</p>
+                </td>
+            </tr>
+            <tr class="bottomBorder">
+                <td style="width: 50%; border-right: 1px solid #cecece;">
+                    <p style="font-size: 3em; font-weight: bold;">83%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Employed in Career-Relevant Jobs</strong></p>
+                    <p style="font-size: 1.2em;">Employed CCM students in positions related to their career goals.</p>
+                </td>
+                <td style="width: 50%;">
+                    <p style="font-size: 3em; font-weight: bold;">80%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Had At Least One Internship</strong></p>
+                    <p style="font-size: 1.2em;">CCM students with at least one internship or other professional work experience.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="tablesaw tablesaw-stack" style="margin-left: auto; margin-right: auto;">
+            <tbody>
+            <tr>
+                <td style="padding-bottom: 0;">
+                    <h4>Major-Specific Outcomes</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Broadcast Media Production', 100, 80, 100);">Broadcast Media Production</a></li>
+                        <li><a href="#" onclick="genModal('Communication', 100, 89, 100);">Communication</a></li>
+                        <li><a href="#" onclick="genModal('Creative Media', 86, 70, 57);">Creative Media</a></li>
+                        <li><a href="#" onclick="genModal('Filmmaking', 92, 83, 77);">Filmmaking</a></li>
+                        <li><a href="#" onclick="genModal('Game Art &amp; Animation', 100, 50, 40);">Game Art &amp; Animation</a></li>
+                    </ul>
+                </td>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Game Design', 76, 77, 47);">Game Design</a></li>
+                        <li><a href="#" onclick="genModal('Graphic Design &amp; Digital Media', 92, 95, 85);">Graphic Design &amp; Digital Media</a></li>
+                        <li><a href="#" onclick="genModal('Professional Writing', 92, 86, 100);">Professional Writing</a></li>
+                        <li><a href="#" onclick="genModal('Public Relations', 100, 100, 100);">Public Relations</a></li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="color: #aeaeae;">All statistics based on data gathered from 84% of graduates from the Division of Communication &amp; Creative Media Class of 2016 six months post-graduation</p>
+    </div>
+</div>
+<!-- #SSB_OUTCOMES -->
+<div class="accordion default">
+    <div class="accordionHeader" style="background-color: #f7b334;">
+        <h3>Stiller School of Business Outcomes</h3>
+    </div>
+    <div class="accordionContent">
+        <table align="left" class="tablesaw tablesaw-stack" style="width: 100%;">
+            <tbody>
+            <tr class="bottomBorder">
+                <td style="width: 50%; text-align: center;"><span style="font-size: 5em; font-weight: bold;">94%</span></td>
+                <td style="width: 50%; vertical-align: middle;">
+                    <p style="font-size: 1.2em;"><strong>Achieved Career Success</strong></p>
+                    <p style="font-size: 1.2em;">SSB students employed or continuing education six months post-graduation.</p>
+                </td>
+            </tr>
+            <tr class="bottomBorder">
+                <td style="width: 50%; border-right: 1px solid #cecece;">
+                    <p style="font-size: 3em; font-weight: bold;">89%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Employed in Career-Relevant Jobs</strong></p>
+                    <p style="font-size: 1.2em;">Employed SSB students in positions related to their career goals.</p>
+                </td>
+                <td style="width: 50%;">
+                    <p style="font-size: 3em; font-weight: bold;">100%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Had At Least One Internship</strong></p>
+                    <p style="font-size: 1.2em;">SSB students with at least one internship or other professional work experience.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="tablesaw tablesaw-stack" style="margin-left: auto; margin-right: auto;">
+            <tbody>
+            <tr>
+                <td style="padding-bottom: 0;">
+                    <h4>Major-Specific Outcomes</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Accounting', 83, 90, 100);">Accounting</a></li>
+                        <li><a href="#" onclick="genModal('Business Administration', 100, 91, 100);">Business Administration</a></li>
+                        <li><a href="#" onclick="genModal('International Business', 91, 78, 100);">International Business</a></li>
+                    </ul>
+                </td>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Management &amp; Innovation', 100, 67, 100);">Management &amp; Innovation</a></li>
+                        <li><a href="#" onclick="genModal('Management of Creative Media', 91, 85, 100);">Management of Creative Media</a></li>
+                        <li><a href="#" onclick="genModal('Marketing', 95, 95, 100);">Marketing</a></li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="color: #aeaeae;">All statistics based on data gathered from 100% of graduates from the Robert P. Stiller School of Business Class of 2016 six months post-graduation</p>
+    </div>
+</div>
+<!-- #EHS_OUTCOMES -->
+<div class="accordion default">
+    <div class="accordionHeader" style="background-color: #73a950;">
+        <h3>Division of Education &amp; Human Studies Outcomes</h3>
+    </div>
+    <div class="accordionContent">
+        <table align="left" class="tablesaw tablesaw-stack" style="width: 100%;">
+            <tbody>
+            <tr class="bottomBorder">
+                <td style="width: 50%; text-align: center;"><span style="font-size: 5em; font-weight: bold;">97%</span></td>
+                <td style="width: 50%; vertical-align: middle;">
+                    <p style="font-size: 1.2em;"><strong>Achieved Career Success</strong></p>
+                    <p style="font-size: 1.2em;">EHS students employed or continuing education six months post-graduation.</p>
+                </td>
+            </tr>
+            <tr class="bottomBorder">
+                <td style="width: 50%; border-right: 1px solid #cecece;">
+                    <p style="font-size: 3em; font-weight: bold;">86%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Employed in Career-Relevant Jobs</strong></p>
+                    <p style="font-size: 1.2em;">Employed EHS students in positions related to their career goals.</p>
+                </td>
+                <td style="width: 50%;">
+                    <p style="font-size: 3em; font-weight: bold;">100%</p>
+                    <p style="font-size: 1.2em;"><strong>Students Had At Least One Internship</strong></p>
+                    <p style="font-size: 1.2em;">EHS students with at least one internship or other professional work experience.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="tablesaw tablesaw-stack" style="margin-left: auto; margin-right: auto;">
+            <tbody>
+            <tr>
+                <td style="padding-bottom: 0;">
+                    <h4>Major-Specific Outcomes</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Criminal Justice', 100, 67, 100);">Criminal Justice</a></li>
+                        <li><a href="#" onclick="genModal('Early Childhood / Elementary Teacher Education', 95, 100, 100);">Early Childhood / Elementary Teacher Education</a></li>
+                        <li><a href="#" onclick="genModal('Environmental Policy', 80, 25, 100);">Environmental Policy</a></li>
+                        <li><a href="#" onclick="genModal('Law (formally Legal Studies)', 100, 100, 100);">Law (formally Legal Studies)</a></li>
+                    </ul>
+                </td>
+                <td style="width: 50%;">
+                    <ul>
+                        <li><a href="#" onclick="genModal('Middle School Teacher Education', 100, 100, 100);">Middle School Teacher Education</a></li>
+                        <li><a href="#" onclick="genModal('Psychology', 100, 80, 100);">Psychology</a></li>
+                        <li><a href="#" onclick="genModal('Secondary Teacher Education', 100, 100, 100);">Secondary Teacher Education</a></li>
+                        <li><a href="#" onclick="genModal('Social Work', 100, 100, 100);">Social Work</a></li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="color: #aeaeae;">All statistics based on data gathered from 82% of graduates from the Division of Education &amp; Human Studies Class of 2016 six months post-graduation.</p>
+    </div>
+</div>
+<p style="color: #aeaeae;">All statistics based on information gathered from 88% of the graduating class of 2016 six months post-graduation.</p>
+
+
+<hr />
+<p><strong>Statistics by Year</strong><br /><button class="btn" style="background-color: #bebebe; border: none;">2016</button> <a href="x35633.xml"><button class="btn">2015</button></a></p>
